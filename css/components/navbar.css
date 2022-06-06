@@ -1,0 +1,42 @@
+.header--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    
+}
+
+li a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: black;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.header nav .nav--links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#header--logo p {
+    padding: 15px 0px 15px 15px;
+}
+
+.nav--links ul li a.active {
+    color: #5B4FD5;
+    border-bottom: 2px solid #5B4FD5;
+}
+
+.nav--links ul li a:hover {
+    color: #5B4FD5;
+    transition: 250ms ease;
+}
+
