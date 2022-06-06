@@ -1,0 +1,29 @@
+.about--wrapper {
+    background-color: #565A90;
+}
+
+.about--wrapper h2{
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+
+#about--title-underline {
+    border-bottom: 2px solid white;
+}
+
+
+.about--elements-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about--elements-paragraph p {
+    color: white;
+    font-weight: 500;
+    line-height: 2;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+
+}
