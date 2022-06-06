@@ -3,7 +3,6 @@
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    
 }
 
 li a {
@@ -25,6 +24,15 @@ ul {
     align-items: center;
 }
 
+#header--logo img {
+    max-width: 70px;
+    max-height: 70px;
+}
+
+#header--logo img:hover {
+   transform: rotate(90deg);
+   transition: 500ms ease;
+}
 
 #header--logo p {
     padding: 15px 0px 15px 15px;

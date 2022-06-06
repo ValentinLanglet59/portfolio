@@ -33,7 +33,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80%;
+    height: 89%;
 }
 
 .home--background--elements {
@@ -53,7 +53,9 @@
 }
 
 
+
 main {
-    height: inherit;
+    height: calc(100% - 11%);
+
 }
 
