@@ -1,0 +1,134 @@
+.projects--background {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.projects--wrapper--background {
+    background-color: #F3F3F3;
+}
+
+#projects--from--title {
+    color:#5B4FD5;
+    text-align: center;
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+#projects--color {
+    background-color: white;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+#project-span {
+    color:rgb(128,103,179);
+}
+
+main h3 {
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 25px;
+}
+
+.project-wrapper {
+    border-radius: 6px;
+    box-shadow: 0 20px 80px rgba(0,0,0,0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
+    position: relative;
+}
+
+#project-img {
+    width: 100%;
+    max-width: 200px;
+    transition: all 450ms ease;
+}
+
+#projects-container {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.project {
+    list-style: none;
+}
+
+.project-main-container {
+    padding: 25px 0px 25px 0px;
+}
+
+.project-wrapper:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1c1d25;
+    opacity: 0;
+    border-radius: 6px;
+    transition: opacity 450ms ease;
+    z-index: 2;
+}
+
+.project:hover .project-wrapper:before {
+    opacity: 0.7;
+
+}
+
+.project:hover #project-img {
+    transform: scale(1.07);
+    filter: blur(5px);
+}
+
+.project-description {
+    position: absolute;
+    max-width: 550px;
+    width: 90%;
+    z-index: 3;
+    opacity: 0;
+    transition: 300ms ease;
+}
+
+.project-description-title,
+.project-description-subtitle,
+.project-description-para,
+.project-description-links {
+    color: white;
+}
+
+.project-description-para {
+    font-size: 12px;
+    line-height: 1.25;
+    color: white;
+}
+
+.project-description-subtitle {
+    padding-bottom: 4px;
+    color: white;
+}
+
+.project:hover .project-description {
+    opacity: 1;
+}
+
+#project-description-title-span {
+    color: rgb(254,213,0);
+}
+
+#project-description-title--span {
+    color : rgb(0,91,186);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+

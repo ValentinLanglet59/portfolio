@@ -1,6 +1,8 @@
 @import url("components/navbar.css");
 @import url("components/background.css");
 @import url("components/about.css");
+@import url("components/projects.css");
+@import url("components/images.css");
 
 * {
     box-sizing: border-box;
