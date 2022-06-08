@@ -5,13 +5,13 @@
     justify-content: space-evenly;
 }
 
-
 .projects--wrapper--background {
     background-color: #F3F3F3;
+    padding-bottom: 36px;
 }
 
 #projects--from--title {
-    color:#5B4FD5;
+    color:#8378FF;
     text-align: center;
     padding-top: 36px;
     padding-bottom: 36px;
@@ -120,11 +120,11 @@ main h3 {
 }
 
 #project-description-title-span {
-    color: #61DAFB;
+    color: #D6C24F;
 }
 
 #project-description-title--span {
-    color : black;
+    color : #D6C24F;
 }
 
 .image-container {
@@ -133,4 +133,3 @@ main h3 {
     align-items: center;
     padding-top: 100px;
 }
-

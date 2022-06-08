@@ -6,12 +6,12 @@
 .about--wrapper h2{
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     text-align: center;
-    color: #5B4FD5;
+    color: #8378FF;
 }
 
 
 #about--title-underline {
-    border-bottom: 2px solid #5B4FD5;
+    border-bottom: 2px solid #8378FF;
 }
 
 
