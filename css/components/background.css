@@ -54,15 +54,11 @@
     color: #D6C24F;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     transition: 200ms ease;
-    
 }
-
 
 main {
     height: calc(100% - 11%);
-
 }
-
 
 .about--links {
     padding-top: 45px;
