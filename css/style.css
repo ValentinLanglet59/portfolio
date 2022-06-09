@@ -5,6 +5,7 @@
 @import url("components/images.css");
 @import url("components/contact.css");
 @import url("components/wave.css");
+@import url("components/footer.css");
 
 * {
     box-sizing: border-box;

@@ -63,3 +63,18 @@ main {
 
 }
 
+
+.about--links {
+    padding-top: 45px;
+}
+
+.home-link {
+    text-decoration: none;
+    margin-left: 12px;
+}
+
+.aboutlink {
+    color:#D6C24F;
+    border: 1px solid #D6C24F;
+}
+

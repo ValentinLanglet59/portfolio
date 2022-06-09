@@ -51,7 +51,6 @@
     border-radius: 40px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     margin-bottom: 16px;
-    transform: rotate(3deg);
 }
 
 .about--right-wrapper p {
@@ -61,7 +60,9 @@
     font-weight: 400;
 }
 
-
+.skills {
+    width: 33%;
+}
 .about--list--skills {
     display: flex;
     flex-wrap: wrap;
@@ -80,7 +81,6 @@ li {
     list-style: none;
     text-decoration: none;
     text-align: center;
-    width: 33%;
 }
 
 .skills {
@@ -119,8 +119,7 @@ li p {
 
 
 .fa-brands {
-    border: 1px solid black;
-    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+   
     padding: 10px;
     border-radius: 50%;
 }
@@ -138,8 +137,8 @@ li p {
 }
 
 .fa-twitter {
-    color: #188CD8;
-    border: 1px solid #188CD8;
+    color: #D6C24F;;
+    border: 1px solid #D6C24F;;
 }
 
 .fa-brands:hover {

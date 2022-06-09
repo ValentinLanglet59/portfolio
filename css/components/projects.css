@@ -78,6 +78,7 @@ main h3 {
 .project {
     list-style: none;
     margin: 15px;
+    width: 33%;
 }
 
 .project-main-container {
