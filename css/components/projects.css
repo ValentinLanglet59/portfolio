@@ -5,9 +5,30 @@
     justify-content: space-evenly;
 }
 
+.custom-shape-divider-top-1654787034 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1654787034 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 160px;
+}
+
+.custom-shape-divider-top-1654787034 .shape-fill {
+    fill: #D6C24F;
+}
+
 .projects--wrapper--background {
-    background-color: #F3F3F3;
-    padding-bottom: 36px;
+    padding: 150px 0px 150px 0px;
+    background-image: url("../components/images/backgroundabout.svg");
+    position: relative;
 }
 
 #projects--from--title {
@@ -18,7 +39,6 @@
 }
 
 #projects--color {
-    background-color: white;
     padding: 8px;
     border-radius: 6px;
 }

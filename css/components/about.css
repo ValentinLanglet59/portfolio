@@ -1,8 +1,10 @@
 .about--wrapper {
     background-color: white;
-    padding: 150px 0px 150px 0px;
+    padding: 150px 0px 250px 0px;
     position: relative;
 }
+
+
 .custom-shape-divider-top-1654766285 {
     position: absolute;
     top: 0;
@@ -49,6 +51,7 @@
     border-radius: 40px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     margin-bottom: 16px;
+    transform: rotate(3deg);
 }
 
 .about--right-wrapper p {
@@ -70,7 +73,7 @@
 #about--title {
     text-align: center;
     padding-bottom: 4px;
-    color : #4d4d4d;
+    color : #8378FF
 }
 
 li {
@@ -176,4 +179,26 @@ li p {
 .borderbo {
     border: 1px solid #6F12EA;
     box-shadow: 0 0 15px #6F12EA;
+}
+
+
+.custom-shape-divider-bottom-1654787177 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1654787177 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 160px;
+}
+
+.custom-shape-divider-bottom-1654787177 .shape-fill {
+    fill: #D6C24F;
 }
