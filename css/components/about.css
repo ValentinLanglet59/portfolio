@@ -182,7 +182,7 @@ li p {
 }
 
 
-.custom-shape-divider-bottom-1654787177 {
+.custom-shape-divider-bottom-1654787346 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -192,13 +192,13 @@ li p {
     transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1654787177 svg {
+.custom-shape-divider-bottom-1654787346 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
     height: 160px;
 }
 
-.custom-shape-divider-bottom-1654787177 .shape-fill {
-    fill: #D6C24F;
+.custom-shape-divider-bottom-1654787346 .shape-fill {
+    fill: #8378FF;
 }
