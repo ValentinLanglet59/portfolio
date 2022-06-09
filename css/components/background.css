@@ -6,7 +6,7 @@
 #home--background--contactme {
     list-style: none;
     text-decoration: none;
-    background-color:#5B4FD5;
+    background-color:#D6C24F;
     border-radius: 50px;
     padding: 18px;
     color: white;
@@ -14,7 +14,7 @@
 }
 
 #home--background--image {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.1)),url("images/background.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.1)),url("images/circle-scatter-haikei.svg");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -47,14 +47,13 @@
 
 
 #home--background--contactme:hover {
-    border: 1px solid #5B4FD5;
+    border: 2px solid #D6C24F;
     border-radius: 50px;
     background-color: transparent;
     padding: 18px;
-    color: #5B4FD5;
+    color: #D6C24F;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    transition: 250ms ease;
-    transform: rotate(90deg);
+    transition: 200ms ease;
     
 }
 
