@@ -1,0 +1,15 @@
+@media(max-width: 820px) {
+    .about--big--wrapper {
+        flex-direction: column;
+    }
+
+    .projects--background {
+        padding-top :60px;
+        flex-direction: column;
+    }
+    
+    .project {
+        width: 85%;
+    }
+
+}

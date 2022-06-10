@@ -6,6 +6,8 @@
 @import url("components/contact.css");
 @import url("components/wave.css");
 @import url("components/top-btn.css");
+@import url("components/responsive.css");
+
 
 * {
     box-sizing: border-box;
