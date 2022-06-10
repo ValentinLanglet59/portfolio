@@ -1,0 +1,28 @@
+.background--thanks {
+    background-color: #F8F8F8;
+    height: 100vh;
+}
+
+.background--thanks i {
+    color: #0FB35E;
+    font-size: 66px;
+
+}
+
+.container--thanks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: inherit;
+}
+
+.container--thanks h2 {
+    color: #383838;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#thanks--message {
+    color:#5B4FD5;
+}
