@@ -8,7 +8,7 @@
 
 
 .projects--wrapper--background {
-    padding: 200px 0px 200px 0px;
+    padding: 100px 0px 200px 0px;
     position: relative;
     background-color: #F8F8F8;
 }
@@ -26,7 +26,7 @@
 }
 
 #project-span {
-    color:rgb(128,103,179);
+    color:white;
 }
 
 main h3 {
@@ -115,7 +115,7 @@ main h3 {
 
 .project-description-subtitle {
     padding-bottom: 4px;
-    color: #8378FF;
+    color: #6A98F0;
 }
 
 .project:hover .project-description {
@@ -123,11 +123,11 @@ main h3 {
 }
 
 #project-description-title-span {
-    color: #D6C24F;
+    color: #6A98F0;
 }
 
 #project-description-title--span {
-    color : #D6C24F;
+    color : #6A98F0;
 }
 
 .image-container {
@@ -140,7 +140,7 @@ main h3 {
 .project-description-link i {
     padding: 4px;
     font-size: 12px;
-    color: #D6C24F;
-    border: 1px solid #D6C24F;
+    color: #6A98F0;
+    border: 1px solid #6A98F0;
 
 }
