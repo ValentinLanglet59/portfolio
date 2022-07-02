@@ -1,40 +1,19 @@
 .about--wrapper {
-    background-color: white;
-    padding: 150px 0px 250px 0px;
+    background-color: #F8F8F8;
+    padding: 60px 0px 50px 0px;
     position: relative;
 }
-
-
-.custom-shape-divider-top-1654804548 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1654804548 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 66px;
-}
-
-.custom-shape-divider-top-1654804548 .shape-fill {
-    fill: #D6C24F;
-}
-
 
 .about--wrapper h2{
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     text-align: center;
-    color: #8378FF;
+    color: #6D83F2;
+    padding: 50px 0px 50px 0px;
 }
 
 
 #about--title-underline {
-    border-bottom: 2px solid #8378FF;
+    border-bottom: 2px solid #6D83F2;
 }
 
 
@@ -42,7 +21,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 80px;
+    transform: skewY(+3deg);
+    padding-top: 120px;
 }
 
 .about--right-wrapper img {
@@ -57,11 +37,19 @@
     text-align: justify;
     line-height: 1.6;
     font-weight: 400;
+    color: #6d83f2;
+    font-weight: 300;
 }
 
 .skills {
     width: 33%;
+    font-size: 24px;
 }
+
+.skills > p {
+    color: white;
+}
+
 .about--list--skills {
     display: flex;
     flex-wrap: wrap;
@@ -73,7 +61,8 @@
 #about--title {
     text-align: center;
     padding-bottom: 4px;
-    color : #8378FF
+    color : #6d83f2;
+    font-weight: 300;
 }
 
 li {
@@ -92,28 +81,28 @@ li p {
 }
 
 #about--right--span {
-    color:#5B4FD5;
-    border-bottom: 2px solid #5B4FD5;
+    color:#6D83F2;
+    border-bottom: 2px solid #6D83F2;
 }
 
 .fa-html5 {
-    color:#F25220;
+    color:white;
 }
 
 .fa-css3-alt {
-    color:#2D48CE;
+    color:white;
 }
 
 .fa-js {
-    color:#EBD41B;
+    color:white;
 }
 
 .fa-sass {
-    color:#C26292;
+    color:white;
 }
 
 .fa-react {
-    color:#61DAFB;
+    color:white;
 }
 
 
@@ -133,8 +122,8 @@ li p {
 }
 
 .fa-twitter {
-    color: #D6C24F;;
-    border: 1px solid #D6C24F;;
+    color:#6D83F2;
+    border: 1px solid #6D83F2;
 }
 
 .fa-brands:hover {
@@ -143,63 +132,63 @@ li p {
 }
 
 .fa-bootstrap {
-    color:#6F12EA;
+    color:white;
 }
 
 .borderc {
-    border: 1px solid #2D48CE;
-    box-shadow: 0 0 15px #2D48CE;
+    border: 1px solid white;
+    box-shadow: 0 0 15px white;
 }
 
 .borderh {
-    border: 1px solid #F25220;
-    box-shadow: 0 0 15px #F25220;
+    border: 1px solid white;
+    box-shadow: 0 0 15px white;
 }
 
 .borderj {
-    border: 1px solid #EBD41B;
-    box-shadow: 0 0 6px #EBD41B;
+    border: 1px solid white;
+    box-shadow: 0 0 6px white;
 }
 
 .borders {
-    border: 1px solid #C26292;
-    box-shadow: 0 0 15px #C26292;
+    border: 1px solid white;
+    box-shadow: 0 0 15px white;
 }
 
 .borderr {
-    border: 1px solid #61DAFB;
-    box-shadow: 0 0 15px #61DAFB;
+    border: 1px solid white;
+    box-shadow: 0 0 15px white;
 }
 
 .borderbo {
-    border: 1px solid #6F12EA;
-    box-shadow: 0 0 15px #6F12EA;
+    border: 1px solid white;
+    box-shadow: 0 0 15px white;
+    
 }
 
-
-.custom-shape-divider-bottom-1654787346 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1654787346 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 160px;
-}
-
-.custom-shape-divider-bottom-1654787346 .shape-fill {
-    fill: #8378FF;
-}
 
 .bordersq {
-    border: 1px solid black;
-    box-shadow: 0 0 15px black;
+    border: 1px solid white;
+    box-shadow: 0 0 15px white;
     padding: 10px;
+    color: white;
+}
+
+.skewbg {
+    width: 100%;
+    min-height: 600px;
+    background-image: linear-gradient(to right top, #6d83f2, #6b89f2, #698ef2, #6993f1, #6a98f0);
+    transform: skewY(-3deg);
+    z-index: -1 ;
+    pointer-events: none;
+    margin: 50px 0px 50px 0px;
+}
+
+.about--self--description {
+    background-color: white;
+    position: absolute;
+    border-radius: 6px;
+    padding: 16px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    
 }
