@@ -19,7 +19,7 @@ console.log(header)
 
 checkbox.addEventListener('change', () => {
     document.body.classList.toggle('dark')
-    background.classList.toggle('dark')
+    background.classList.toggle('darky')
     header.classList.toggle('dark')
     title.classList.toggle('darktext')
     description.classList.toggle('darktext')
