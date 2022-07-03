@@ -13,7 +13,7 @@
     <link rel="shortcut icon" type="image/png"href="css/components/images/favicon.png">
 </head>
 <body>
-    <div id="home--background--image">
+    <div id="home--background--image" class="home-bg">
         <header>
             <nav>
                 <div class="header--wrapper">
@@ -22,12 +22,20 @@
                     </div>
                     <div class="header--nav nav--links">
                         <ul id="menu">
-                            <li><a class="nav-link active" href="#home">Home</a></li>
+                            <li><a class="nav-link" href="#home">Home</a></li>
                             <li><a class="nav-link" href="#about">About</a></li>
                             <li><a class="nav-link"  href="#projects">Projects</a></li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="switchtheme">
+                        <input type="checkbox" id="checkbox" class="checkbox">
+                        <div class="test">
+                            <label for="checkbox" class="label">
+                                <i class="fas fa-moon"></i>
+                                <i class="fas fa-sun"></i>
+                                <div class="ball"></div>
+                            </label>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -35,8 +43,8 @@
         <main>
             <div class="home--background--wrapper">
                 <div class="home--background--elements">
-                    <h1> Hi I'm <span id="home--background--title">Valentin</span> !</h1>   
-                    <p class="animated">Front-end Developer</p>
+                    <h1 class="home--title"> Hi I'm <span id="home--background--title">Valentin</span> !</h1>   
+                    <p class="home--desc">Front-end Developer</p>
                     <a id="home--background--contactme"href="#contact">Contact me !</a>
                     <div class="about--links">
                         <a target="_blank" href="https://www.linkedin.com/in/valentin-langlet-29b6271b0/" class="home-link">

@@ -8,6 +8,7 @@
 @import url("components/top-btn.css");
 @import url("components/responsive.css");
 @import url("components/thanks.css");
+@import url("components/darktheme.css");
 
 
 * {
@@ -18,6 +19,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #F8F8F8;
 
 }
 
