@@ -13,3 +13,27 @@
     }
 
 }
+
+@media(max-width: 920px) {
+    .interest--wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+       
+    }
+    .interest {
+        width: 34%!important;
+        margin-bottom: 25px;
+       
+    }
+}
+
+@media(max-width: 650px) {
+    .interest--wrapper {
+        display: flex!important;
+        flex-direction: column!important;
+        align-items: center!important;
+        justify-content: center!important;
+    }
+}

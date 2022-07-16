@@ -70,3 +70,11 @@ body.dark {
 .darktext {
     color: white;
 }
+
+.light {
+    background-color: #6D83F2;
+}
+
+.change {
+    color: black!important ; 
+}
