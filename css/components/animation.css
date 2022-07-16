@@ -1,0 +1,11 @@
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateY(30%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+
+

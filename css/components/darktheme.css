@@ -1,7 +1,7 @@
 .label {
     width: 50px;
     height: 26px;
-    background-color: #111;
+    background-color: #6D83F2;
     border-radius: 50px;
     padding: 5px;
     display: flex;
@@ -9,14 +9,15 @@
     justify-content: center;
     position: relative;
     cursor: pointer;
+    
 }
 
 .fa-moon {
-    color: #F1C40F;
+    color: white;
 }
 
 .fa-sun {
-    color: #F39C12;
+    color: white;
 }
 
 .switchtheme {
@@ -35,6 +36,7 @@
     left: 2px;
     border-radius: 50%;
     transition: 250ms ease;
+
 }
 
 .checkbox {

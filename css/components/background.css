@@ -33,6 +33,7 @@
     justify-content: center;
     align-items: center;
     height: 89%;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
 .home--background--elements {
