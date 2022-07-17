@@ -115,11 +115,6 @@ li p {
     border-radius: 50%;
 }
 
-.fa-solid:hover {
-    opacity: 0.6;
-    transition: 250ms ease;
-}
-
 .fa-twitter {
     color:#6D83F2;
     border: 1px solid #6D83F2;

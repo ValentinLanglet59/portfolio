@@ -12,30 +12,32 @@
     <script src="https://kit.fontawesome.com/8611c7ce26.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/png"href="css/components/images/favicon.png">
 </head>
-<body>
+<body id="home">
     <div id="home--background--image" class="home-bg">
+        <div class="home--logo--switch">
+            <div id="header--logo">
+                <img src="css/components/images/logo_transparent.png" alt="">
+            </div>
+            <div class="switchtheme">
+                <input type="checkbox" id="checkbox" class="checkbox">
+                <div class="test">
+                    <label for="checkbox" class="label">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+        </div>
         <header>
             <nav>
                 <div class="header--wrapper">
-                    <div id="header--logo">
-                        <img src="css/components/images/logo_transparent.png" alt="">
-                    </div>
                     <div class="header--nav nav--links">
                         <ul id="menu">
-                            <li><a class="nav-link" href="#home">Home</a></li>
-                            <li><a class="nav-link" href="#about">About</a></li>
-                            <li><a class="nav-link"  href="#projects">Projects</a></li>
+                            <li><a class="nav-link" href="#home"><i class="fa-solid fa-house"></i></a></li>
+                            <li><a class="nav-link" href="#about"><i class="fa-solid fa-user"></i></a></li>
+                            <li><a class="nav-link"  href="#projects"><i class="fa-solid fa-diagram-project"></i></a></li>
                         </ul>
-                    </div>
-                    <div class="switchtheme">
-                        <input type="checkbox" id="checkbox" class="checkbox">
-                        <div class="test">
-                            <label for="checkbox" class="label">
-                                <i class="fas fa-moon"></i>
-                                <i class="fas fa-sun"></i>
-                                <div class="ball"></div>
-                            </label>
-                        </div>
                     </div>
                 </div>
             </nav>

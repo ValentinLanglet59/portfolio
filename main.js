@@ -11,7 +11,6 @@ window.addEventListener("scroll", () => {
 
 const checkbox = document.getElementById('checkbox')
 const background = document.querySelector('#home--background--image')
-const header = document.querySelector('.header--wrapper');
 const title = document.querySelector('.home--title')
 const description = document.querySelector('.home--desc')
 const interest = document.querySelectorAll(".interest")
@@ -23,7 +22,6 @@ const interestTitles = document.querySelectorAll(".interest--subtitle")
 checkbox.addEventListener('change', () => {
     document.body.classList.toggle('dark')
     background.classList.toggle('darky')
-    header.classList.toggle('dark')
     title.classList.toggle('darktext')
     description.classList.toggle('darktext')
     logointerest.classList.toggle('change')
