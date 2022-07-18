@@ -89,3 +89,12 @@ li {
     align-items: center;
     justify-content: space-between;
 }
+
+li {
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

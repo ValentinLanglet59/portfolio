@@ -1,0 +1,84 @@
+#title-skills {
+    text-align: center;
+    font-size: 24px;
+    color: #6D83F2;
+  
+}
+
+.skills--wrapper {
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 120px;
+}
+
+.skill {
+    box-shadow: 0 0 2px rgba(0,0,0,0.15);
+    height: 350px;
+    width: 20%;
+    border-radius: 8px;
+    padding: 20px 20px 10px 20px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 20%;
+}
+
+.skill-two {
+    box-shadow: 0 0 2px rgba(0,0,0,0.15);
+    height: 350px;
+    width: 20%;
+    border-radius: 8px;
+    padding: 20px 20px 10px 20px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    left: 10%;
+    top: 0%;
+}
+
+.skill-three {
+    box-shadow: 0 0 2px rgba(0,0,0,0.15);
+    height: 350px;
+    width: 20%;
+    border-radius: 8px;
+    padding: 20px 20px 10px 20px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    right: 10%;
+    top: 0%;
+}
+
+#skill-logo {
+    font-size: 34px;
+    color: #6D83F2;
+}
+
+.skill-chevron {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.skill-chevron p {
+    font-weight: 300;
+}
+
+.fa-chevron-right {
+    padding-right: 14px;
+    color: #6D83F2;
+}
