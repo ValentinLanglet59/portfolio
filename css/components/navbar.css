@@ -11,7 +11,6 @@ li a {
     background: transparent;
     padding: 0.9rem;
     border-radius: 50%;
-    font-size: 1.1rem;
 
 }
 
@@ -50,7 +49,11 @@ ul {
 .nav--links ul li a:hover {
     color: white;
     transition: 250ms ease;
-    opacity: 0.7;
+}
+
+.nav-link:hover {
+    background: #6d83f278;
+    transition: 500ms ease;
 }
 
 header {
@@ -68,13 +71,17 @@ nav {
 #menu {
     background: #6276d976;
     width: max-content;
-    padding: 0.7rem 1.7rem;
+    padding: 3px 5px 3px 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
     animation: 1s ease-out 0s 1 slideInFromBottom;
+}
+
+li {
+    margin-left: 5px;
 }
 
 .home--logo--switch {
