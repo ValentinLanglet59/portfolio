@@ -2,144 +2,114 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     padding-top: 130px;
 }
 
-
-.projects--wrapper--background {
-    padding: 100px 0px 200px 0px;
-    position: relative;
-}
-
-#projects--from--title {
-    color:#6D83F2;
-    text-align: center;
-    padding-top: 36px;
-    padding-bottom: 36px;
-}
-
-#projects--color {
-    padding: 8px;
-    border-radius: 6px;
-}
-
-#project-span {
-    color:white;
-}
-
-main h3 {
-    text-align: center;
+#projects--title {
     font-size: 24px;
-    padding-bottom: 25px;
-}
-
-.project-wrapper {
-    border-radius: 6px;
-    box-shadow: 0 20px 80px rgba(0,0,0,0.45);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0px 20px 0px;
-    position: relative;
-}
-
-#project-img {
-    width: 100%;
-    max-width: 200px;
-    transition: all 450ms ease;
-    border-radius: 4px;
-}
-
-#projects-container {
-    max-width: 450px;
-    margin: 0 auto;
+    color: #6D83F2;
+    text-align: center;
 }
 
 .project {
-    list-style: none;
-    margin: 15px;
-    width: 33%;
-}
-
-.project-main-container {
-    padding: 25px 0px 25px 0px;
-}
-
-.project-wrapper:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #1c1d25;
-    opacity: 0;
-    border-radius: 6px;
-    transition: opacity 450ms ease;
-    z-index: 2;
-}
-
-.project:hover .project-wrapper:before {
-    opacity: 0.7;
-
-}
-
-.project:hover #project-img {
-    transform: scale(1.07);
-    filter: blur(5px);
-}
-
-.project-description {
-    position: absolute;
-    max-width: 550px;
-    width: 90%;
-    z-index: 3;
-    opacity: 0;
-    transition: 300ms ease;
-}
-
-.project-description-title,
-.project-description-subtitle,
-.project-description-para,
-.project-description-links {
-    color: white;
-}
-
-.project-description-para {
-    font-size: 12px;
-    line-height: 1.25;
-    color: white;
-}
-
-.project-description-subtitle {
-    padding-bottom: 4px;
-    color: #6A98F0;
-}
-
-.project:hover .project-description {
-    opacity: 1;
-}
-
-#project-description-title-span {
-    color: #6A98F0;
-}
-
-#project-description-title--span {
-    color : #6A98F0;
-}
-
-.image-container {
+    background-color: white;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    justify-content: space-around;
+    height: 400px;
+    padding: 30px;
+    margin-top: 25px;
 }
 
-.project-description-link i {
-    padding: 4px;
-    font-size: 12px;
-    color: #6A98F0;
-    border: 1px solid #6A98F0;
+.project--left {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+    height: inherit;
+}
 
+.project--left h4 {
+    font-size: 20px;
+}
+
+.project--skill--title {
+    font-size: 16px;
+}
+
+.project--description {
+    margin-bottom: 15px;
+}
+
+
+.project--skill--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+}
+
+.project--skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.project--skill p {
+    font-weight: 300;
+}
+
+.projects--wrapper--background {
+    padding: 100px 0px 200px 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.project--image img {
+    width: 320px ;
+    height: 200px;
+    border-radius: 4px;
+}
+
+.project:hover {
+    border-left: 6px solid #6D83F2;
+    transition: 50ms ease-out;
+}
+
+.fa-circle-chevron-right {
+    padding-right: 5px;
+    color :#6D83F2;
+}
+
+.project--link {
+    list-style: none;
+    text-decoration: none;
+    background-color: #6D83F2;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    width: 45%;
+}
+
+.project--link:hover {
+    border: 2px solid #6D83F2;
+    background-color: transparent;
+    padding: 10px;
+    color: #6D83F2;
+    transition: 200ms ease;
+}
+
+
+#project--desc {
+    width: 450px;
+    font-style: italic;
+}
+
+.project--github--btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
 }
