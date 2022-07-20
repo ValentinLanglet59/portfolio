@@ -1,11 +1,11 @@
 .about--wrapper {
     padding: 60px 0px 50px 0px;
     position: relative;
-    height: 100vh;
+    height: inherit;
 }
 
 #about {
-    height: 980px;
+    height: inherit;
 }
 
 .about--wrapper h2{
@@ -73,4 +73,34 @@
     bottom: -23%;
     font-size: 24px;
     color: black;
+}
+
+@media(max-width: 920px) {
+    .skewbgpositive {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about--image img {
+        width: 250px;
+        height: 250px;
+        margin-top: 40px;
+    }
+
+    .about--description {
+        text-align: left;
+    }
+}
+
+@media(max-width: 350px) {
+    .about--image {
+       margin-left: 0;
+    }
+   .about--image img {
+       width: 150px;
+       height: 150px;
+      
+   }
 }

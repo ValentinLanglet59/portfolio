@@ -1,6 +1,6 @@
 #interests {
     padding: 100px 0px 100px 0px;
-    height: 700px;
+    height: inherit;
 }
 
 #interest--title {
@@ -58,4 +58,49 @@
 .fa-code {
     color: #6D83F2;
     
+}
+
+@media(max-width: 920px) {
+    .interest--wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .interest {
+        width: 34%!important;
+        margin-bottom: 25px;
+       
+    }
+
+    .interest--subtitle {
+        font-size: 16px;
+    }
+
+    .interest--desc {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+}
+@media(max-width: 350px) {
+    .interest--subtitle {
+        font-size: 12px;
+    }
+
+    .interest--desc {
+        font-size: 10px;
+        line-height: 1.8;
+    }
+}
+
+
+
+
+@media(max-width: 650px) {
+    .interest--wrapper {
+        display: flex!important;
+        flex-direction: column!important;
+        align-items: center!important;
+        justify-content: center!important;
+    }
 }

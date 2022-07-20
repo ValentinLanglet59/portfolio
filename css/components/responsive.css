@@ -20,12 +20,15 @@
         align-items: center;
         justify-content: space-around;
         flex-wrap: wrap;
-       
     }
     .interest {
         width: 34%!important;
         margin-bottom: 25px;
        
+    }
+
+    .interest--subtitle {
+        font-size: 16px;
     }
 }
 
@@ -36,4 +39,9 @@
         align-items: center!important;
         justify-content: center!important;
     }
+}
+
+
+@media(max-width: 920px) {
+    
 }

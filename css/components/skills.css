@@ -81,3 +81,28 @@
     padding-right: 14px;
     color: #6D83F2;
 }
+
+@media(max-width: 350px) {
+    .skills--wrapper {
+        height: 1200px;
+    }
+   .skill {
+       position: absolute;
+       left: 10%;
+       top: 0%;
+   }
+
+   .skill-two {
+       position:absolute;
+       left : 10%;
+       top:32%;
+
+   }
+   .skill-three {
+        position: absolute;
+        left: 10%;
+        top: 64%;
+        
+   }
+    
+}
