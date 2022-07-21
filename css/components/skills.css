@@ -118,7 +118,7 @@
 
 }
     
-    @media(max-width: 350px) {
+    @media(max-width: 400px) {
         .skills--wrapper {
             height: 1200px;
             display: flex;
@@ -128,20 +128,20 @@
            position: absolute;
            left: 10%;
            top: 0%;
-           width: 100%;
+           width: 80%;
        }
     
        .skill-two {
            position:absolute;
            left : 10%;
            top:32%;
-           width: 100%;
+           width: 80%;
        }
        .skill-three {
             position: absolute;
             left: 10%;
             top: 64%;
-            width: 100%;
+            width: 80%;
        }
         
     }
