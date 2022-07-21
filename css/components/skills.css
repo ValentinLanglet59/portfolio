@@ -82,27 +82,67 @@
     color: #6D83F2;
 }
 
-@media(max-width: 350px) {
-    .skills--wrapper {
-        height: 1200px;
+
+@media(max-width: 800px) {
+    .skill-chevron p {
+        font-size: 12px;
     }
-   .skill {
-       position: absolute;
-       left: 10%;
-       top: 0%;
-   }
-
-   .skill-two {
-       position:absolute;
-       left : 10%;
-       top:32%;
-
-   }
-   .skill-three {
-        position: absolute;
-        left: 10%;
-        top: 64%;
-        
-   }
+    .fa-chevron-right {
+       font-size:12px;
+    }
+    #skill-logo {
+        font-size: 20px;
+    }
+   #skill-logo h4 {
+       font-size: 10px;
+    }
+    #skill-logo-title {
+        font-size: 14px;
+    }
     
 }
+
+@media(max-width: 650px) {
+    .skill {
+        width: 24%;
+    }
+    .skill-two {
+        width: 24%;
+   }
+   .skill-three {
+       width: 24%;
+    }
+    .skills--wrapper {
+        margin: 20px;
+    }
+
+}
+    
+    @media(max-width: 350px) {
+        .skills--wrapper {
+            height: 1200px;
+            display: flex;
+         
+        }
+       .skill {
+           position: absolute;
+           left: 10%;
+           top: 0%;
+           width: 100%;
+       }
+    
+       .skill-two {
+           position:absolute;
+           left : 10%;
+           top:32%;
+           width: 100%;
+       }
+       .skill-three {
+            position: absolute;
+            left: 10%;
+            top: 64%;
+            width: 100%;
+       }
+        
+    }
+ 
