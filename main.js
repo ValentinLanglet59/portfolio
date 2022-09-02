@@ -39,3 +39,16 @@ checkbox.addEventListener('change',()=>{
     el.classList.toggle('change');
   })
 })
+
+// preloader
+
+const loader = document.getElementById('preloader')
+window.addEventListener("load", () => {
+    loader.style.display = "none"
+})
+
+
+ScrollReveal().reveal('.interest--wrapper', { delay: 250 });
+ScrollReveal().reveal('.skills--wrapper', { delay: 250 });
+ScrollReveal().reveal('.home--logo--switch', { delay: 150 });
+

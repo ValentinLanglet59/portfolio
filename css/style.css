@@ -11,7 +11,7 @@
 @import url("components/darktheme.css");
 @import url("components/interests.css");
 @import url("components/skills.css");
-
+@import url("components/loading.css");
 
 * {
     box-sizing: border-box;
