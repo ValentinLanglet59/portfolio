@@ -50,5 +50,6 @@ window.addEventListener("load", () => {
 
 ScrollReveal().reveal('.interest--wrapper', { delay: 250 });
 ScrollReveal().reveal('.skills--wrapper', { delay: 250 });
+
 ScrollReveal().reveal('.home--logo--switch', { delay: 150 });
 
