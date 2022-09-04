@@ -42,15 +42,37 @@ checkbox.addEventListener('change',()=>{
 
 // preloader
 
-const loader = document.getElementById('preloader')
-window.addEventListener("load", () => {
-    loader.style.display = "none"
+/*
+setTimeout(function() {
+  const loader = document.getElementById('preloader')
+  window.addEventListener("load", () => {
+      loader.style.display = "none"
+  })
 })
+*/
+
+const preloader = document.getElementById('preloader');
+
+
+const fadeOutEffect = setInterval(() => {
+  if (!preloader.style.opacity) {
+    preloader.style.opacity = 1;
+  }
+  if (preloader.style.opacity > 0) {
+    preloader.style.opacity -= 0.9;
+  } else {
+    clearInterval(fadeEffect);
+  }
+  preloader.style.display = 'none'
+}, 1000);
 
 
 
 ScrollReveal().reveal('.interest--wrapper', { delay: 250 });
 ScrollReveal().reveal('.skills--wrapper', { delay: 250 });
+ScrollReveal().reveal('.home--logo--switch', { delay: 1050 });
+ScrollReveal().reveal('#menu', { delay: 1050 });
 
-ScrollReveal().reveal('.home--logo--switch', { delay: 150 });
+ 
 
+window.addEventListener('load', fadeOutEffect);
