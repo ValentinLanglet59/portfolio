@@ -66,7 +66,7 @@ checkbox.addEventListener('change',()=>{
 
 checkbox.addEventListener('change',()=>{
   logo.forEach(el => {
-    el.classList.toggle('darky');
+    el.classList.toggle('black');
   })
 })
 
