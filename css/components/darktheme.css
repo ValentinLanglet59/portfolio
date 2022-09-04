@@ -78,3 +78,23 @@ body.dark {
 .change {
     color: black!important ; 
 }
+
+.black {
+    color : black!important;
+}
+
+.bgwhite {
+    background-color: black;
+    color: white;
+}
+
+.bgwhite:hover {
+    border-radius: 6px;
+    background-color: white;
+    color : black;
+}
+
+.projectborder {
+    border-left: 6px solid black;
+    background-color: #6D83F2;
+}

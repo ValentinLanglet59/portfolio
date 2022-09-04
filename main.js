@@ -18,6 +18,15 @@ const logointerest = document.querySelector(".fa-palette")
 const logointerestsecond = document.querySelector(".fa-code")
 const logointerestthird = document.querySelector(".fa-soundcloud")
 const interestTitles = document.querySelectorAll(".interest--subtitle")
+const skill = document.querySelectorAll('.skill')
+const skillTwo = document.querySelector('.skill-two')
+const skillThree = document.querySelector('.skill-three')
+const skillLogo = document.getElementById('skill-logo')
+const logo = document.querySelectorAll('#skill-logo')
+const chevron = document.querySelectorAll('.fa-chevron-right')
+const projects = document.querySelectorAll('.project')
+const chevronCircle = document.querySelectorAll('.fa-circle-chevron-right')
+const githubBtn = document.querySelectorAll('.project--link')
 
 checkbox.addEventListener('change', () => {
     document.body.classList.toggle('dark')
@@ -29,6 +38,50 @@ checkbox.addEventListener('change', () => {
     logointerestthird.classList.toggle('change')
 })
 
+checkbox.addEventListener('change',()=>{
+  githubBtn.forEach(el => {
+    el.classList.toggle('bgwhite');
+  })
+})
+
+checkbox.addEventListener('change',()=>{
+  chevronCircle.forEach(el => {
+    el.classList.toggle('black');
+  })
+})
+
+
+checkbox.addEventListener('change',()=>{
+  projects.forEach(el => {
+    el.classList.toggle('light');
+  })
+})
+
+checkbox.addEventListener('change',()=>{
+  chevron.forEach(el => {
+    el.classList.toggle('black');
+  })
+})
+
+
+checkbox.addEventListener('change',()=>{
+  logo.forEach(el => {
+    el.classList.toggle('darky');
+  })
+})
+
+
+checkbox.addEventListener('change',()=>{
+  skill.forEach(el => {
+    el.classList.toggle('light');
+  })
+})
+checkbox.addEventListener('change',()=>{
+  skillTwo.classList.toggle('light');
+})
+checkbox.addEventListener('change',()=>{
+  skillThree.classList.toggle('light');
+})
 
 
 checkbox.addEventListener('change',()=>{
