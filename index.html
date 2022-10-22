@@ -1,356 +1,610 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600;700&family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Valentin Langlet</title>
-    <script src="https://kit.fontawesome.com/8611c7ce26.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" type="image/png"href="css/components/images/favicon.png">
+    <script
+      src="https://kit.fontawesome.com/8611c7ce26.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="css/components/images/favicon.png"
+    />
     <script src="https://unpkg.com/scrollreveal"></script>
-</head>
+  </head>
 
-<body id="home">
+  <body id="home">
     <div id="preloader">
-        <svg class="pl" viewBox="0 0 64 64" width="64px" height="64px" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#000" />
-                    <stop offset="100%" stop-color="#fff" />
-                </linearGradient>
-                <mask id="grad-mask">
-                    <rect x="0" y="0" width="64" height="64" fill="url(#grad)" />
-                </mask>
-            </defs>
-            <circle class="pl__ring" cx="32" cy="32" r="26" fill="none" stroke="hsl(223,90%,55%)" stroke-width="12" stroke-dasharray="169.65 169.65" stroke-dashoffset="-127.24" stroke-linecap="round" transform="rotate(135)" />
-            <g fill="hsl(223,90%,55%)">
-                <circle class="pl__ball1" cx="32" cy="45" r="6" transform="rotate(14)" />
-                <circle class="pl__ball2" cx="32" cy="48" r="3" transform="rotate(-21)" />
-            </g>
-            <g mask="url(#grad-mask)">
-                <circle class="pl__ring" cx="32" cy="32" r="26" fill="none" stroke="hsl(283,90%,55%)" stroke-width="12" stroke-dasharray="169.65 169.65" stroke-dashoffset="-127.24" stroke-linecap="round" transform="rotate(135)" />
-                <g fill="hsl(283,90%,55%)">
-                    <circle class="pl__ball1" cx="32" cy="45" r="6" transform="rotate(14)" />
-                    <circle class="pl__ball2" cx="32" cy="48" r="3" transform="rotate(-21)" />
-                </g>
-            </g>
-        </svg>
+      <svg
+        class="pl"
+        viewBox="0 0 64 64"
+        width="64px"
+        height="64px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#000" />
+            <stop offset="100%" stop-color="#fff" />
+          </linearGradient>
+          <mask id="grad-mask">
+            <rect x="0" y="0" width="64" height="64" fill="url(#grad)" />
+          </mask>
+        </defs>
+        <circle
+          class="pl__ring"
+          cx="32"
+          cy="32"
+          r="26"
+          fill="none"
+          stroke="hsl(223,90%,55%)"
+          stroke-width="12"
+          stroke-dasharray="169.65 169.65"
+          stroke-dashoffset="-127.24"
+          stroke-linecap="round"
+          transform="rotate(135)"
+        />
+        <g fill="hsl(223,90%,55%)">
+          <circle
+            class="pl__ball1"
+            cx="32"
+            cy="45"
+            r="6"
+            transform="rotate(14)"
+          />
+          <circle
+            class="pl__ball2"
+            cx="32"
+            cy="48"
+            r="3"
+            transform="rotate(-21)"
+          />
+        </g>
+        <g mask="url(#grad-mask)">
+          <circle
+            class="pl__ring"
+            cx="32"
+            cy="32"
+            r="26"
+            fill="none"
+            stroke="hsl(283,90%,55%)"
+            stroke-width="12"
+            stroke-dasharray="169.65 169.65"
+            stroke-dashoffset="-127.24"
+            stroke-linecap="round"
+            transform="rotate(135)"
+          />
+          <g fill="hsl(283,90%,55%)">
+            <circle
+              class="pl__ball1"
+              cx="32"
+              cy="45"
+              r="6"
+              transform="rotate(14)"
+            />
+            <circle
+              class="pl__ball2"
+              cx="32"
+              cy="48"
+              r="3"
+              transform="rotate(-21)"
+            />
+          </g>
+        </g>
+      </svg>
     </div>
     <div id="home--background--image" class="home-bg">
-        <div class="home--logo--switch">
-            <div id="header--logo">
-                <img src="css/components/images/logo_transparent.png" alt="">
-            </div>
-            <div class="switchtheme">
-                <input type="checkbox" id="checkbox" class="checkbox">
-                <div class="test">
-                    <label for="checkbox" class="label">
-                        <i class="fas fa-moon"></i>
-                        <i class="fas fa-sun"></i>
-                        <div class="ball"></div>
-                    </label>
-                </div>
-            </div>
+      <div class="home--logo--switch">
+        <div id="header--logo">
+          <img src="css/components/images/logo_transparent.png" alt="" />
         </div>
-        <header>
-            <nav>
-                <div class="header--wrapper">
-                    <div class="header--nav nav--links">
-                        <ul id="menu">
-                            <li><a class="nav-link" href="#home"><i class="fa-solid fa-house"></i></a></li>
-                            <li><a class="nav-link" href="#about"><i class="fa-solid fa-user"></i></a></li>
-                            <li><a class="nav-link"  href="#projects"><i class="fa-solid fa-diagram-project"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <div class="home--background--wrapper">
-                <div class="home--background--elements">
-                    <h1 class="home--title"> Hi I'm <span id="home--background--title">Valentin</span> !</h1>   
-                    <p class="home--desc">Front-end Developer</p>
-                    <a id="home--background--contactme"href="#contact">Contact me !</a>
-                    <div class="about--links">
-                        <a target="_blank" href="https://www.linkedin.com/in/valentin-langlet-29b6271b0/" class="home-link">
-                            <i class="aboutlink fa-brands fa-linkedin"></i>
-                        </a>
-                        <a target="_blank" href="https://twitter.com/VLZeroo"  class="home-link">
-                            <i class="aboutlink fa-brands fab fa-twitter"></i>
-                        </a>
-                        <a target="_blank" href="https://github.com/ValentinLanglet59"  class="home-link">
-                            <i class="aboutlink fa-brands fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
+        <div class="switchtheme">
+          <input type="checkbox" id="checkbox" class="checkbox" />
+          <div class="test">
+            <label for="checkbox" class="label">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <div class="ball"></div>
+            </label>
+          </div>
+        </div>
+      </div>
+      <header>
+        <nav>
+          <div class="header--wrapper">
+            <div class="header--nav nav--links">
+              <ul id="menu">
+                <li>
+                  <a class="nav-link" href="#home"
+                    ><i class="fa-solid fa-house"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#about"
+                    ><i class="fa-solid fa-user"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#projects"
+                    ><i class="fa-solid fa-diagram-project"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
-        </main>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="home--background--wrapper">
+          <div class="home--background--elements">
+            <h1 class="home--title">
+              Hi I'm <span id="home--background--title">Valentin</span> !
+            </h1>
+            <p class="home--desc">Front-end Developer</p>
+            <a id="home--background--contactme" href="#contact">Contact me !</a>
+            <div class="about--links">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/valentin-langlet-29b6271b0/"
+                class="home-link"
+              >
+                <i class="aboutlink fa-brands fa-linkedin"></i>
+              </a>
+              <a
+                target="_blank"
+                href="https://twitter.com/VLZeroo"
+                class="home-link"
+              >
+                <i class="aboutlink fa-brands fab fa-twitter"></i>
+              </a>
+              <a
+                target="_blank"
+                href="https://github.com/ValentinLanglet59"
+                class="home-link"
+              >
+                <i class="aboutlink fa-brands fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
     <section id="interests">
-        <h1 id="interest--title">My interests !</h1>
-        <div class="interest--wrapper">
-            <div class="interest">
-                <i class="fa-solid fa-palette"></i>
-                <h4 class="interest--subtitle"> UX/UI Design</h4>
-                <p class="interest--desc"> I love to see beautiful, well done and dynamic websites !</p>
-            </div>
-            <div class="interest">
-                <i class="fa-solid fa-code"></i>
-                <h4 class="interest--subtitle"> Web Development </h4>
-                <p class="interest--desc"> I have studied some backend with Ruby but I have a special interest in Frontend </p> 
-            </div>
-            <div class="interest">
-                <i class="fa-brands fa-soundcloud"></i>
-                <h4 class="interest--subtitle"> Some Music !</h4>
-                <p class="interest--desc"> I love to have some good songs while working && learning !</p>
-            </div>
+      <h1 id="interest--title">My interests !</h1>
+      <div class="interest--wrapper">
+        <div class="interest">
+          <div class="interest-img-container">
+            <img src="./css/components/images/about04.png" alt="" />
+          </div>
+          <h4 class="interest--subtitle">UX/UI Design</h4>
+          <p class="interest--desc">
+            I love to see beautiful, well done and dynamic websites !
+          </p>
         </div>
+        <div class="interest">
+          <div class="interest-img-container">
+            <img src="./css/components/images/about02.png" alt="" />
+          </div>
+          <h4 class="interest--subtitle">Web Development</h4>
+          <p class="interest--desc">
+            I have a passion for development in general
+          </p>
+        </div>
+        <div class="interest">
+          <div class="interest-img-container">
+            <img src="./css/components/images/about03.png" alt="" />
+          </div>
+          <h4 class="interest--subtitle">MERN Stack !</h4>
+          <p class="interest--desc">
+            I decided to be a Fullstack Javascript dev !
+          </p>
+        </div>
+      </div>
     </section>
     <section id="about">
-        <div class="about--wrapper">
-            <h2> <span class="about--title-background">A<span id="about--title-underline">bout</span> me !</span></h2>
-            <div class="skewbg">
-                <div class="skewbgpositive">
-                    <div class="about--description">
-                        <p id="about--first--para">Hello the<span id="about--there">re ! </span> <br> <br> </p>
-                        <p>A little introduction is necessary ? I will talk a little bit about me :)</p>
-                        <p>I'm a self taught developer. I have learned to code from various websites like Scrimba, learnJavascriptOnline, Udemy and our good old friend Youtube ! I have also done the bootcamp "Le Wagon" in order to have some real dev' experience<br> <br> It's been more or less 10 months since I started to really code. Since then I have learned a lot of things that I'm showing through this portfolio and my projects ! I'm currently looking for a job as a frontend developer. <br> <br> If you are interested, hit me up !</p>
-                    </div>
-                    <div class="about--image">
-                        <img src="css/components/images/main pic.jpeg" alt="">
-                    </div>
-                </div>
+      <div class="about--wrapper">
+        <div class="skewbg">
+          <div class="skewbgpositive">
+            <div class="about--description">
+              <p id="about--first--para">So, who am I ?</p>
+              <br />
+              <p>
+                I'm a self taught developer. I have learned to code from various
+                websites like Scrimba! I have also done the bootcamp "Le Wagon"
+                in order to have some real dev' experience<br />
+                <br />
+                It's been more or less 10 months since I started to really code.
+                Since then I have learned a lot of things that I'm showing
+                through this portfolio and my projects ! I'm currently looking
+                for a job as a frontend developer. <br />
+                <br />
+                If you are interested, hit me up !
+              </p>
             </div>
+            <div class="about--image">
+              <img src="css/components/images/photo.jpeg" alt="" />
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <section id="skills">
-        <h3 id="title-skills">My skills </h3>
-        <div class="skills--wrapper">
-            <div class="skill">
-                <i id="skill-logo" class="fa-solid fa-image"></i>
-                <h4 id="skill-logo-title">Frontend</h4>
-                <div class="skill-chevron">
-                    <i class="fa-solid fa-chevron-right"></i>
-                    <p>HTML & CSS</p>
-                </div>
-                <div class="skill-chevron">
-                    <i class="fa-solid fa-chevron-right"></i>
-                    <p>JavaScript</p>
-                </div>
-                <div class="skill-chevron">
-                    <i class="fa-solid fa-chevron-right"></i>
-                    <p>React</p>
-                </div>
-                <div class="skill-chevron">
-                    <i class="fa-solid fa-chevron-right"></i>
-                    <p>Bootstrap</p>
-                </div>
+      <h1>Skills & Experiences</h1>
+      <div class="skills-container">
+        <div class="skills-wrapper">
+          <div class="skill">
+            <div class="img-wrapper">
+              <img src="./css/components/images/html.png" alt="" />
             </div>
-            <div class="skill-two">
-                <i id="skill-logo" class="fa-solid fa-terminal"></i>
-                <h4 id="skill-logo-title">Backend</h4>
-                <div class="skill-chevron">
-                    <i class="fa-solid fa-chevron-right"></i>
-                    <p>Ruby</p>
-                </div>
-                <div class="skill-chevron">
-                    <i class="fa-solid fa-chevron-right"></i>
-                    <p>Rails</p>
-                </div>
-                <div class="skill-chevron">
-                    <i class="fa-solid fa-chevron-right"></i>
-                    <p>SQL</p>
-                </div>
+            <p class="img--desc">HTML</p>
+          </div>
+          <div class="skill">
+            <div class="img-wrapper">
+              <img src="./css/components/images/css.png" alt="" />
             </div>
-            <div class="skill-three">
-                <i id="skill-logo" class="fa-solid fa-screwdriver-wrench"></i>
-                <h4 id="skill-logo-title">Tools</h4>
-                <div  class="skill-chevron">
-                    <i class="fa-solid fa-chevron-right"></i>
-                    <p>Figma</p>
-                </div>
-                <div  class="skill-chevron">
-                    <i class="fa-solid fa-chevron-right"></i>
-                    <p>Adobe</p>
-                </div>
+            <p class="img--desc">CSS</p>
+          </div>
+          <div class="skill">
+            <div class="img-wrapper">
+              <img src="./css/components/images/javascript.png" alt="" />
             </div>
+            <p class="img--desc">Javascript</p>
+          </div>
+          <div class="skill">
+            <div class="img-wrapper">
+              <img src="./css/components/images/reactlogo.png" alt="" />
+            </div>
+            <p class="img--desc">React</p>
+          </div>
+          <div class="skill">
+            <div class="img-wrapper">
+              <img src="./css/components/images/redux.png" alt="" />
+            </div>
+            <p class="img--desc">Redux</p>
+          </div>
+          <div class="skill">
+            <div class="img-wrapper">
+              <img src="./css/components/images/node.png" alt="" />
+            </div>
+            <p class="img--desc">Node</p>
+          </div>
+          <div class="skill">
+            <div class="img-wrapper">
+              <img src="./css/components/images/pngwing.com (4).png" alt="" />
+            </div>
+            <p class="img--desc">Ruby</p>
+          </div>
+          <div class="skill">
+            <div class="img-wrapper">
+              <img src="./css/components/images/pngwing.com.png" alt="" />
+            </div>
+            <p class="img--desc">Rails</p>
+          </div>
+          <div class="skill">
+            <div class="img-wrapper">
+              <img src="./css/components/images/pngwing.com (1).png" alt="" />
+            </div>
+            <p class="img--desc">SQL</p>
+          </div>
+          <div class="skill">
+            <div class="img-wrapper">
+              <img src="./css/components/images/pngwing.com (2).png" alt="" />
+            </div>
+            <p class="img--desc">Bootstrap</p>
+          </div>
+          <div class="skill">
+            <div class="img-wrapper">
+              <img src="./css/components/images/figma.png" alt="" />
+            </div>
+            <p class="img--desc">Figma</p>
+          </div>
         </div>
+
+        <div class="experiences-wrapper">
+          <div class="experiences">
+            <div class="experiences-divider">
+              <div>
+                <p class="experiences-dates">2021</p>
+              </div>
+              <div>
+                <h4 class="experiences-title">Fullstack Developer</h4>
+                <p class="experiences-employer">Le Wagon - Bootcamp</p>
+              </div>
+            </div>
+          </div>
+          <div class="experiences">
+            <div class="experiences-divider">
+              <div>
+                <p class="experiences-dates">2022</p>
+              </div>
+              <div>
+                <h4 class="experiences-title">Front-end Graduate</h4>
+                <p class="experiences-employer">Scrimba</p>
+              </div>
+            </div>
+          </div>
+          <div class="experiences">
+            <div class="experiences-divider">
+              <div>
+                <p class="experiences-dates">2022</p>
+              </div>
+              <div>
+                <h4 class="experiences-title">Initiation to Development</h4>
+                <p class="experiences-employer">
+                  Association Konexio - Benevolent
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="projects">
-        <h3 id="projects--title">My projects</h3>
-        <div class="projects--wrapper--background">
-            <div class="project">
-                <div class="project--left">
-                    <h4>Memes Generator</h4>
-                    <p id="project--desc">My first React application where you can create your own meme by fetching an API in order to get the image and you type whatever text to be rendered on it !</p>
-                    <h5 class="project--skill--title">Skills</h5>
-                    <div class="project--skill--wrapper">
-                        <div class="project--skill">
-                            <i class="fa-solid fa-circle-chevron-right"></i>
-                            <p>HTML & CSS</p>
-                        </div>
-                        <div class="project--skill">
-                            <i class="fa-solid fa-circle-chevron-right"></i>
-                            <p>Javascript</p>
-                        </div>
-                        <div class="project--skill">
-                            <i class="fa-solid fa-circle-chevron-right"></i>
-                            <p>React</p>
-                        </div>
-                    </div>
-                    <div class="project--github--btn">
-                        <a class="project--link" target="_blank" href="https://github.com/ValentinLanglet59/memesGenerator">Github</a>
-                    </div>
-                </div>
-                <div class="project--image">
-                    <img id="project-img"src="css/components/images/fetch.png" alt="">
-                </div>
+      <h3 id="projects--title">My projects</h3>
+      <div class="projects--wrapper--background">
+        <div class="project">
+          <div class="project--left">
+            <h4>Memes Generator</h4>
+            <p id="project--desc">
+              My first React application where you can create your own meme by
+              fetching an API in order to get the image and you type whatever
+              text to be rendered on it !
+            </p>
+            <h5 class="project--skill--title">Skills</h5>
+            <div class="project--skill--wrapper">
+              <div class="project--skill">
+                <i class="fa-solid fa-circle-chevron-right"></i>
+                <p>HTML & CSS</p>
+              </div>
+              <div class="project--skill">
+                <i class="fa-solid fa-circle-chevron-right"></i>
+                <p>Javascript</p>
+              </div>
+              <div class="project--skill">
+                <i class="fa-solid fa-circle-chevron-right"></i>
+                <p>React</p>
+              </div>
             </div>
-            <div class="project">
-                <div class="project--left">
-                    <h4>BlackJack Game</h4>
-                    <p id="project--desc">A blackJack game made with Javascript ! Have fun !</p>
-                    <h5 class="project--skill--title">Skills</h5>
-                    <div class="project--skill--wrapper">
-                        <div class="project--skill">
-                            <i class="fa-solid fa-circle-chevron-right"></i>
-                            <p>HTML & CSS</p>
-                        </div>
-                        <div class="project--skill">
-                            <i class="fa-solid fa-circle-chevron-right"></i>
-                            <p>Javascript</p>
-                        </div>
-                    </div>
-                    <div class="project--github--btn">
-                        <a class="project--link" target="_blank" href="https://github.com/ValentinLanglet59/blackJack.js">Github</a>
-                    </div>
-                </div>
-                <div class="project--image">
-                    <img id="project-img" src="css/components/images/blackjack.png" alt="">
-                </div>
+            <div class="project--github--btn">
+              <a
+                class="project--link"
+                target="_blank"
+                href="https://github.com/ValentinLanglet59/memesGenerator"
+                >Github</a
+              >
             </div>
-            <div class="project">
-                <div class="project--left">
-                    <h4>A website fetching for films</h4>
-                    <p id="project--desc">A website done with JavaScript and an API where you can type whatever film you are looking for and the results will be displayed on screen !</p>
-                    <h5 class="project--skill--title">Skills</h5>
-                    <div class="project--skill--wrapper">
-                        <div class="project--skill">
-                            <i class="fa-solid fa-circle-chevron-right"></i>
-                            <p>HTML & CSS</p>
-                        </div>
-                        <div class="project--skill">
-                            <i class="fa-solid fa-circle-chevron-right"></i>
-                            <p>Javascript</p>
-                        </div>
-                    </div>
-                    <div class="project--github--btn">
-                        <a class="project--link" target="_blank" href="https://github.com/ValentinLanglet59/fetchingFilms.js">Github</a>
-                    </div>
-                </div>
-                <div class="project--image">
-                    <img id="project-img" src="css/components/images/fetch.png" alt="">
-                </div>
-            </div>
-            <div class="project">
-                <div class="project--left">
-                    <h4>React template copycat</h4>
-                    <p id="project--desc">A beautiful React template copied in order to train HTML & CSS !</p>
-                    <h5 class="project--skill--title">Skills</h5>
-                    <div class="project--skill--wrapper">
-                        <div class="project--skill">
-                            <i class="fa-solid fa-circle-chevron-right"></i>
-                            <p>HTML & CSS</p>
-                        </div>
-                    </div>
-                    <div class="project--github--btn">
-                        <a class="project--link" target="_blank" href="https://github.com/ValentinLanglet59/tReactCopyCat">Github</a>
-                    </div>
-                </div>
-                <div class="project--image">
-                    <img id="project-img" src="css/components/images/react.png" alt="">
-                </div>
-            </div>
-            <div class="project">
-                <div class="project--left">
-                    <h4>Autocompletor</h4>
-                    <p id="project--desc">A website that take your input and gives you words looking like your search</p>
-                    <h5 class="project--skill--title">Skills</h5>
-                    <div class="project--skill--wrapper">
-                        <div class="project--skill">
-                            <i class="fa-solid fa-circle-chevron-right"></i>
-                            <p>HTML & CSS</p>
-                        </div>
-                        <div class="project--skill">
-                            <i class="fa-solid fa-circle-chevron-right"></i>
-                            <p>Javascript</p>
-                        </div>
-                    </div>
-                    <div class="project--github--btn">
-                        <a class="project--link" target="_blank" href="https://github.com/ValentinLanglet59/Autocomplete.js">Github</a>
-                    </div>
-                </div>
-                <div class="project--image">
-                    <img id="project-img" src="css/components/images/fetch.png" alt="">
-                </div>
-            </div>
-            <div class="project">
-                <div class="project--left">
-                    <h4>Ruby - To do List</h4>
-                    <p id="project--desc">A small to-do list done in Ruby!</p>
-                    <h5 class="project--skill--title">Skills</h5>
-                    <div class="project--skill--wrapper">
-                        <div class="project--skill">
-                            <i class="fa-solid fa-circle-chevron-right"></i>
-                            <p>Ruby</p>
-                        </div>
-                    </div>
-                    <div class="project--github--btn">
-                        <a class="project--link" target="_blank" href="https://github.com/ValentinLanglet59/to_do_list.rb">Github</a>
-                    </div>
-                </div>
-                <div class="project--image">
-                    <img id="project-img" src="css/components/images/ruby.png" alt="">
-                </div>
-            </div>
+          </div>
+          <div class="project--image">
+            <img
+              id="project-img"
+              src="css/components/images/fetch.png"
+              alt=""
+            />
+          </div>
         </div>
+        <div class="project">
+          <div class="project--left">
+            <h4>BlackJack Game</h4>
+            <p id="project--desc">
+              A blackJack game made with Javascript ! Have fun !
+            </p>
+            <h5 class="project--skill--title">Skills</h5>
+            <div class="project--skill--wrapper">
+              <div class="project--skill">
+                <i class="fa-solid fa-circle-chevron-right"></i>
+                <p>HTML & CSS</p>
+              </div>
+              <div class="project--skill">
+                <i class="fa-solid fa-circle-chevron-right"></i>
+                <p>Javascript</p>
+              </div>
+            </div>
+            <div class="project--github--btn">
+              <a
+                class="project--link"
+                target="_blank"
+                href="https://github.com/ValentinLanglet59/blackJack.js"
+                >Github</a
+              >
+            </div>
+          </div>
+          <div class="project--image">
+            <img
+              id="project-img"
+              src="css/components/images/blackjack.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="project">
+          <div class="project--left">
+            <h4>A website fetching for films</h4>
+            <p id="project--desc">
+              A website done with JavaScript and an API where you can type
+              whatever film you are looking for and the results will be
+              displayed on screen !
+            </p>
+            <h5 class="project--skill--title">Skills</h5>
+            <div class="project--skill--wrapper">
+              <div class="project--skill">
+                <i class="fa-solid fa-circle-chevron-right"></i>
+                <p>HTML & CSS</p>
+              </div>
+              <div class="project--skill">
+                <i class="fa-solid fa-circle-chevron-right"></i>
+                <p>Javascript</p>
+              </div>
+            </div>
+            <div class="project--github--btn">
+              <a
+                class="project--link"
+                target="_blank"
+                href="https://github.com/ValentinLanglet59/fetchingFilms.js"
+                >Github</a
+              >
+            </div>
+          </div>
+          <div class="project--image">
+            <img
+              id="project-img"
+              src="css/components/images/fetch.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="project">
+          <div class="project--left">
+            <h4>React template copycat</h4>
+            <p id="project--desc">
+              A beautiful React template copied in order to train HTML & CSS !
+            </p>
+            <h5 class="project--skill--title">Skills</h5>
+            <div class="project--skill--wrapper">
+              <div class="project--skill">
+                <i class="fa-solid fa-circle-chevron-right"></i>
+                <p>HTML & CSS</p>
+              </div>
+            </div>
+            <div class="project--github--btn">
+              <a
+                class="project--link"
+                target="_blank"
+                href="https://github.com/ValentinLanglet59/tReactCopyCat"
+                >Github</a
+              >
+            </div>
+          </div>
+          <div class="project--image">
+            <img
+              id="project-img"
+              src="css/components/images/react.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="project">
+          <div class="project--left">
+            <h4>Autocompletor</h4>
+            <p id="project--desc">
+              A website that take your input and gives you words looking like
+              your search
+            </p>
+            <h5 class="project--skill--title">Skills</h5>
+            <div class="project--skill--wrapper">
+              <div class="project--skill">
+                <i class="fa-solid fa-circle-chevron-right"></i>
+                <p>HTML & CSS</p>
+              </div>
+              <div class="project--skill">
+                <i class="fa-solid fa-circle-chevron-right"></i>
+                <p>Javascript</p>
+              </div>
+            </div>
+            <div class="project--github--btn">
+              <a
+                class="project--link"
+                target="_blank"
+                href="https://github.com/ValentinLanglet59/Autocomplete.js"
+                >Github</a
+              >
+            </div>
+          </div>
+          <div class="project--image">
+            <img
+              id="project-img"
+              src="css/components/images/fetch.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="project">
+          <div class="project--left">
+            <h4>Ruby - To do List</h4>
+            <p id="project--desc">A small to-do list done in Ruby!</p>
+            <h5 class="project--skill--title">Skills</h5>
+            <div class="project--skill--wrapper">
+              <div class="project--skill">
+                <i class="fa-solid fa-circle-chevron-right"></i>
+                <p>Ruby</p>
+              </div>
+            </div>
+            <div class="project--github--btn">
+              <a
+                class="project--link"
+                target="_blank"
+                href="https://github.com/ValentinLanglet59/to_do_list.rb"
+                >Github</a
+              >
+            </div>
+          </div>
+          <div class="project--image">
+            <img id="project-img" src="css/components/images/ruby.png" alt="" />
+          </div>
+        </div>
+      </div>
     </section>
     <section id="contact">
-        <div class="contact--background">
-            <h2>Keep in touch !</h2>
-            <div class="container">
-                <form action="https://formsubmit.co/ca5551db988f23abead9fc13567e2aef" method="POST" >
-                    <i class="fas fa-paper-plane"></i>
-                    <div class="input-group">
-                        <label>Full Name</label>
-                        <input name="name" type="text" class="form-control" placeholder="Enter your name" required>
-                    </div>
-                    <div class="input-group">
-                        <label>Email Address</label>
-                        <input name="email" type="email" class="form-control" placeholder="Enter Email" required>
-                    </div>   
-                    <div class="input-group">
-                        <label>Your Message</label>
-                        <textarea rows="5" name="message" placeholder="Enter your message"></textarea>
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://valentinlanglet.netlify.app/thanks.html" >
-
-                    </div>
-                    <button type="submit" >Submit</button>
-                </form>
+      <div class="contact--background">
+        <h2>Keep in touch !</h2>
+        <div class="container">
+          <form
+            action="https://formsubmit.co/ca5551db988f23abead9fc13567e2aef"
+            method="POST"
+          >
+            <i class="fas fa-paper-plane"></i>
+            <div class="input-group">
+              <label>Full Name</label>
+              <input
+                name="name"
+                type="text"
+                class="form-control"
+                placeholder="Enter your name"
+                required
+              />
             </div>
+            <div class="input-group">
+              <label>Email Address</label>
+              <input
+                name="email"
+                type="email"
+                class="form-control"
+                placeholder="Enter Email"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label>Your Message</label>
+              <textarea
+                rows="5"
+                name="message"
+                placeholder="Enter your message"
+              ></textarea>
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://valentinlanglet.netlify.app/thanks.html"
+              />
+            </div>
+            <button type="submit">Submit</button>
+          </form>
         </div>
+      </div>
     </section>
-      <a href="" class="top-btn" >
-        <i class="fa-solid fa-arrow-up"></i>     
-      </a>
+    <a href="" class="top-btn">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
     <script src="main.js"></script>
-   
-</body>
+  </body>
 </html>
-
-
