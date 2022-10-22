@@ -67,11 +67,6 @@ checkbox.addEventListener('change', () => {
 });
 
 checkbox.addEventListener('change', () => {
-  skill.forEach((el) => {
-    el.classList.toggle('light');
-  });
-});
-checkbox.addEventListener('change', () => {
   skillTwo.classList.toggle('light');
 });
 checkbox.addEventListener('change', () => {
